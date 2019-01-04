@@ -1,5 +1,5 @@
 {
-    "extends": "./base.json",
+    "extends": "./tsconfig.dev",
     "compilerOptions": {
         "removeComments": false,
         "sourceMap": true,

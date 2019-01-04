@@ -5,8 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx tsc -p ./config/typescript/development.json",
-    "build" : "npx tsc -p ./config/typescript/production.json"
+    "dev" : "npx tsc -p ./config/typescript/tsconfig.dev.json",
+    "build" : "npx tsc -p ./config/typescript/tsconfig.prod.json"
   },
   "repository": {
     "type": "git",
