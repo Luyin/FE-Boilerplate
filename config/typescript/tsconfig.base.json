@@ -21,6 +21,7 @@
         "../../src/**/*"
     ],
     "exclude": [
+        "../../config",
         "../../node_modules",
         "../../bower_components",
         "../../dist",
