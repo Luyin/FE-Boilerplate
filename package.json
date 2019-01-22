@@ -5,8 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx tsc -p ./config/typescript/tsconfig.dev.json",
-    "build" : "npx tsc -p ./config/typescript/tsconfig.prod.json"
+    "build": "npx rollup --config ./config/rollup/rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,8 @@
   },
   "homepage": "https://github.com/Luyin/FE-Boilerplate#readme",
   "devDependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-typescript2": "^0.18.1",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   }
