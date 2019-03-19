@@ -4,7 +4,7 @@
   "description": "Front-End 개발환경에 대한 Boilerplate 이다.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx mocha --opts ./mocha.opts",
     "build": "npx rollup --config ./config/rollup/rollup.config.js"
   },
   "repository": {
@@ -18,9 +18,17 @@
   },
   "homepage": "https://github.com/Luyin/FE-Boilerplate#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/sinon": "^7.0.10",
+    "@types/sinon-chai": "^3.2.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.18.1",
     "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "sinon": "^7.2.7",
+    "sinon-chai": "^3.3.0"
   }
 }
