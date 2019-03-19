@@ -1,0 +1,25 @@
+{
+  "name": "fe-boilerplate",
+  "version": "1.0.0",
+  "description": "Front-End 개발환경에 대한 Boilerplate 이다.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "npx tsc -p ./config/typescript/tsconfig.dev.json",
+    "build" : "npx tsc -p ./config/typescript/tsconfig.prod.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luyin/FE-Boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luyin/FE-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/Luyin/FE-Boilerplate#readme",
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
