@@ -4,7 +4,7 @@
   "description": "Front-End 개발환경에 대한 Boilerplate 이다.",
   "main": "index.ts",
   "scripts": {
-    "test": "npx mocha --opts ./mocha.opts",
+    "test": "npx mocha --config ./.mocharc.json",
     "build": "npx rollup --config ./config/rollup/rollup.config.js"
   },
   "repository": {
