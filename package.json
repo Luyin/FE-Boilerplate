@@ -8,6 +8,13 @@
     "test": "npx mocha --config ./.mocharc.json",
     "build": "npx rollup --config ./config/rollup/rollup.config.js"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npx commitlint --config ./config/commitLint/commitlint.config.js",
+      "pre-commit": "npm lint",
+      "pre-push": "npm test"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Luyin/FE-Boilerplate.git"
