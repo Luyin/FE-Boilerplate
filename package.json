@@ -4,6 +4,7 @@
   "description": "Front-End 개발환경에 대한 Boilerplate 이다.",
   "main": "index.ts",
   "scripts": {
+    "lint": "npx tslint -p ./config/typescript/tsconfig.dev.json",
     "test": "npx mocha --config ./.mocharc.json",
     "build": "npx rollup --config ./config/rollup/rollup.config.js"
   },
@@ -23,6 +24,7 @@
     "@types/sinon": "^7.0.10",
     "@types/sinon-chai": "^3.2.2",
     "chai": "^4.2.0",
+    "husky": "^1.3.1",
     "mocha": "^6.0.2",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.20.1",
