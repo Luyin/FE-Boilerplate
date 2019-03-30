@@ -4,9 +4,10 @@
   "description": "Front-End 개발환경에 대한 Boilerplate 이다.",
   "main": "index.ts",
   "scripts": {
-    "lint": "npx tslint -p ./config/typescript/tsconfig.dev.json",
-    "test": "npx mocha --config ./.mocharc.json",
-    "build": "npx rollup --config ./config/rollup/rollup.config.js"
+    "lint": "tslint -p ./config/typescript/tsconfig.dev.json",
+    "test": "mocha --config ./.mocharc.json",
+    "build": "rollup --config ./config/rollup/rollup.config.js",
+    "docs": "typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
     "hooks": {
@@ -42,6 +43,7 @@
     "ts-node": "^7.0.1",
     "tslint": "^5.14.0",
     "tslint-config-airbnb": "^5.11.1",
+    "typedoc": "^0.14.2",
     "typescript": "^3.2.2"
   }
 }
