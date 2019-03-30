@@ -10,8 +10,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "npx commitlint --config ./config/commitLint/commitlint.config.js",
-      "pre-commit": "npm lint",
+      "commit-msg": "npx commitlint --config ./config/commitLint/commitlint.config.js -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint",
       "pre-push": "npm test"
     }
   },
