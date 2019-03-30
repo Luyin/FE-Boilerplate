@@ -7,7 +7,7 @@
     "lint": "tslint -p ./config/typescript/tsconfig.dev.json",
     "test": "mocha --config ./.mocharc.json",
     "build": "rollup --config ./config/rollup/rollup.config.js",
-    "docs": "typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
+    "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
     "hooks": {
