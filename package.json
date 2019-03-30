@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Luyin/FE-Boilerplate#readme",
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/sinon": "^7.0.10",

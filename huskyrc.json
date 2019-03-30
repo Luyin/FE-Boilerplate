@@ -1,5 +1,6 @@
 {
     "hooks": {
+        "commit-msg": "npx commitlint --config ./config/commitLint/commitlint.config.js",
         "pre-commit": "npm lint",
         "pre-push": "npm test"
     }
