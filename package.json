@@ -6,9 +6,8 @@
   "scripts": {
     "lint": "tslint -p ./config/typescript/tsconfig.dev.json",
     "test": "mocha --config ./.mocharc.json",
-    "build": "rollup --config ./config/rollup/rollup.config.js",
-    "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src",
-    "printsizes": "print-sizes ./dist"
+    "build": "rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
+    "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
     "hooks": {
