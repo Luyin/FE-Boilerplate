@@ -10,7 +10,8 @@ export default {
     },
     plugins: [
         typescript({
-            tsconfig: './config/typescript/tsconfig.prod.json'
+            tsconfig: (process.env.NODE_ENV === 'production') ? 
+            './config/typescript/tsconfig.prod.json' : './config/typescript/tsconfig.dev.json'
         })
     ]
 }
