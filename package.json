@@ -8,7 +8,9 @@
     "test": "nyc mocha --config ./.mocharc.json",
     "test:e2e": "karma start ./config/karma/karma.config.js",
     "coverage": "",
-    "build": "cross-env NODE_PATH=src NODE_ENV=production rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
+    "prebuild": "rimraf dist",
+    "build:dev": "npm run prebuild && cross-env NODE_PATH=src NODE_ENV=development rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
+    "build:prod": "npm run prebuild && cross-env NODE_PATH=src NODE_ENV=production rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
     "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
@@ -67,6 +69,7 @@
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
     "print-sizes": "0.0.4",
+    "rimraf": "^2.6.3",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.20.1",
     "sinon": "^7.2.7",
