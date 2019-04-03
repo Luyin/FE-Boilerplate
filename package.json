@@ -8,7 +8,7 @@
     "test": "nyc mocha --config ./.mocharc.json",
     "test:e2e": "karma start ./config/karma/karma.config.js",
     "coverage": "",
-    "build": "rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
+    "build": "cross-env NODE_ENV=production rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
     "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
@@ -53,6 +53,7 @@
     "@types/sinon": "^7.0.10",
     "@types/sinon-chai": "^3.2.2",
     "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
     "husky": "^1.3.1",
     "karma": "^4.0.1",
     "karma-chai": "^0.1.0",
