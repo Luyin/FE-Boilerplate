@@ -8,7 +8,7 @@
     "test": "nyc mocha --config ./.mocharc.json",
     "test:e2e": "karma start ./config/karma/karma.config.js",
     "coverage": "",
-    "build": "cross-env NODE_ENV=production rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
+    "build": "cross-env NODE_PATH=src NODE_ENV=production rollup --config ./config/rollup/rollup.config.js && print-sizes ./dist",
     "docs": "rm -rf ./docs & typedoc --tsconfig ./config/typescript/tsconfig.prod.json --out docs ./src"
   },
   "husky": {
