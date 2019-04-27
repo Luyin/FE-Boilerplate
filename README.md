@@ -1,6 +1,8 @@
 # FE-Boilerplate
 Typescript Based FE Boilerplate
 
+Detail Information : [Wiki Link](https://github.com/Luyin/FE-Boilerplate/wiki)
+
 ## Contains
 ### Build
 - [x] typescript
