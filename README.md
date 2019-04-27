@@ -7,26 +7,27 @@ https://stateofjs.com/
 
 ## Contains
 ### Basic
-- [ ] typescript
-- [ ] ts-node
+- [x] typescript
+- [x] ts-node
 ### Build
-- [ ] rollup
+- [x] rollup
 - [ ] webpack 4.x
   - [ ] happypack
-- [ ] cross-env
-- [ ] husky
-- [ ] rimraf
+- [x] cross-env
+- [x] husky
+- [x] rimraf
 ### Convention
-- [ ] tslint
-  - [ ] tslint-config-airbnb
-- [ ] commitlint
-- [ ] pretieer
+- [x] tslint
+  - [x] tslint-config-airbnb
+- [x] commitlint
+- [x] pretieer
 ### Test Env
-- [ ] mocha
-- [ ] chai
-- [ ] sinon
-- [ ] karma
-- [ ] nyc
+- [x] mocha
+- [x] chai
+- [x] sinon
+- [x] karma
+- [x] nyc
+- [ ] selenium
 ### Doc Env
-- [ ] Typedoc
+- [x] Typedoc
 
