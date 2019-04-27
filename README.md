@@ -1,9 +1,5 @@
 # FE-Boilerplate
-Front-End 개발환경에 대한 Boilerplate 이다.
-
-
-## 기술 자료 참고 사이트
-https://stateofjs.com/
+Typescript Based FE Boilerplate
 
 ## Contains
 ### Basic
@@ -31,3 +27,7 @@ https://stateofjs.com/
 ### Doc Env
 - [x] Typedoc
 
+## Commands
+
+## Reference
+https://stateofjs.com/
