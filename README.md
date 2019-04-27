@@ -2,10 +2,9 @@
 Typescript Based FE Boilerplate
 
 ## Contains
-### Basic
+### Build
 - [x] typescript
 - [x] ts-node
-### Build
 - [x] rollup
 - [ ] webpack 4.x
   - [ ] happypack
